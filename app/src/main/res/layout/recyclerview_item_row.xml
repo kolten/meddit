@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <!-- A CardView that contains a TextView -->
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         card_view:cardCornerRadius="4dp">
 
         <LinearLayout
@@ -19,6 +18,7 @@
 
 
             <ImageView
+                android:id="@+id/post_img"
                 android:layout_width="140dp"
                 android:layout_height="140dp" />
 
@@ -29,22 +29,21 @@
                 android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/post_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:textColor="#000"
-                android:textSize="18sp"
-                android:text="title of post" />
+                <TextView
+                    android:id="@+id/post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="title of post"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/post_ups"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#555"
-                android:text="upvotes"
-                />
+                <TextView
+                    android:id="@+id/post_ups"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="upvotes"
+                    android:textColor="#555" />
             </LinearLayout>
 
         </LinearLayout>
